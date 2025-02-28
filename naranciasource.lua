@@ -9,7 +9,7 @@ local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/blood
 local PhantomForcesWindow = Library:NewWindow("Narancia Hub")
 
 local KillingCheats = PhantomForcesWindow:NewSection("Main")
-
+local KKKillingCheats = PhantomForcesWindow:NewSection("ESP")
 
 KillingCheats:CreateButton("Aimbot (Team Check ON)", function()
 local teamCheck = true
@@ -151,7 +151,7 @@ loop = RunService.RenderStepped:Connect(function()
 end)
 end)
 
-KillingCheats:CreateButton("Aimbot (Team Check OFF)", function()
+KKKillingCheats:CreateButton("Aimbot (Team Check OFF)", function()
 local teamCheck = false
 local fov = 90
 local smoothing = 0.02
@@ -464,7 +464,7 @@ game:GetService("Players").PlayerAdded:Connect(function(newplr)
 end)
 end)
 
-KillingCheats:CreateButton("Esp Skeleton", function()
+KKKillingCheats:CreateButton("Esp Skeleton", function()
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/ESPs/main/UniversalSkeleton.lua"))()
 
 
@@ -475,10 +475,4 @@ end
 game.Players.PlayerAdded:Connect(function(Player)
 	table.insert(Skeletons, Library:NewSkeleton(Player, true));
 end)
-end)
-
-local KKillingCheats = PhantomForcesWindow:NewSection("Misc")
-
-KKillingCheats:CreateButton("Universal AK 47", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/ak47", true))()
 end)
