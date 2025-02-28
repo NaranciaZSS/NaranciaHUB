@@ -1,7 +1,7 @@
 game.StarterGui:SetCore("SendNotification", {
 Title = "Notification",
 Text = "Narancia Hub Loaded, v1 [ UPDATED 02/28 ]",
-Duration = 5,
+Duration = 10,
 })
 
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
