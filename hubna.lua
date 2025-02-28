@@ -150,15 +150,8 @@ loop = RunService.RenderStepped:Connect(function()
 end)
 end)
 
-KillingCheats:CreateButton("Skeleton Esp", function()
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/ESPs/main/UniversalSkeleton.lua"))()
+local KKillingCheats = PhantomForcesWindow:NewSection("Misc")
 
-
-local Skeletons = {}
-for _, Player in next, game.Players:GetChildren() do
-	table.insert(Skeletons, Library:NewSkeleton(Player, true));
-end
-game.Players.PlayerAdded:Connect(function(Player)
-	table.insert(Skeletons, Library:NewSkeleton(Player, true));
-end)
+KKillingCheats:CreateButton("Universal AK 47", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/ak47", true))()
 end)
